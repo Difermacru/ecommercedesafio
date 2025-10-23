@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 225, 225);
+}
+
+nav{
+    grid-area: encabezado;
+    background-color: rgba(4, 4, 237, 0.814);
+    text-align: center;
+}
+
+aside{
+    grid-area: lateral;
+    margin-left: 20px;
+
+}
+
+main{
+    grid-area: contenido;
+}
+
+footer{
+    grid-area: final;
+    background-color: white;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    font-size: 35px;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    align-items:flex-start;
+}
+
+aside li{
+    font-size: 30px;    
+}
+
+aside li span{
+    color: rgb(139, 139, 139);
+}
+
+.layout{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "lateral contenido"
+    "final final";
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 20px 20px 0;
+}
+
+.imagen{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+img{
+    width: 600px;
+    height: 600px;
+}
+
+strong{
+    font-size: 40px;
+}
+
+p{
+    font-size: 30px;
+}
+
+.imagen button{
+    width: 100%;
+    height: 90px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(4, 4, 237, 0.814);
+}
