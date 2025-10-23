@@ -41,6 +41,7 @@ aside ul{
     padding: 0;
     gap: 10px;
     align-items:flex-start;
+    cursor: pointer;
 }
 
 aside li{
@@ -95,4 +96,5 @@ p{
     font-size: 30px;
     color: white;
     background-color: rgba(4, 4, 237, 0.814);
+    cursor: pointer;
 }
